@@ -20,13 +20,13 @@ const Banner = () => {
 
       {/* ------------------------------- */}
 
-      <div className="w-full relative">
+      <div className="w-full group relative overflow-hidden">
         <PrimaryButton
-          className="absolute bottom-[10%] left-[15%] duration-150 hover:bg-sclr hover:text-white hover:border-sclr"
+          className="absolute z-10  bottom-[10%] left-[15%] duration-150 hover:bg-sclr hover:text-white hover:border-sclr"
           onClick={() => console.log("HAIII")}
           content={"Shop Now"}
         ></PrimaryButton>
-        <img className="border-2" src={BannerPic}></img>
+        <img className="border-2 group-hover:scale-110 duration-500" src={BannerPic}></img>
       </div>
     </div>
   );
