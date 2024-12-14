@@ -1,16 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Header from "../Header/Header";
-import Banner from "../pages/Banner/Banner";
-import ProductCategory from "../pages/ProductCategory/ProductCategory";
-import ProductCategoryTwo from "../pages/ProductCategoryTwo/ProductCategoryTwo";
+import PrimaryHeader from "../Header/PrimaryHeader";
 
 const Layout = () => {
   return (
     <div className="h-screen w-full">
-      <Header />
-      <Banner />
-      <ProductCategory />
-      <ProductCategoryTwo />
+      <PrimaryHeader />
       <Outlet />
     </div>
   );

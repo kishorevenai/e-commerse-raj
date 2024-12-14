@@ -1,21 +1,16 @@
-import LongArrowIcon from "../../../assets/longArrow.svg";
-import sunGlass from "../../../assets/sunglass.webp";
-const CardOne = ({ className: CardClassName }) => {
+import PrimaryButton from "../Buttons/PrimaryButton";
+
+const CardOne = ({ product }) => {
   return (
-    <div
-      className={`${CardClassName} h-[500px] group make_row_between relative duration-500 ml-10 aspect-3/4 border bg-primary_color hover:scale-110`}
-    >
-      <div className="overflow-hidden group-hover:scale-90 duration-500  border-black h-5/6">
-        <img alt="glasses" src={sunGlass}></img>
-      </div>
-      <div className="flex w-11/12 mx-auto make_between">
-        <div className="make_row_between_start">
-          <p className="p_primary">Product Name</p>
-          <p className="p_secondary ">10 Items</p>
-        </div>
-        <button className="make_center duration-150 bg-white rounded-full h-[40px] aspect-square hover:scale-125">
-          <img alt="arrow" src={LongArrowIcon}></img>
-        </button>
+    <div className="w-4/12 overflow-hidden group relative aspect-3/4">
+      <img className="w-full duration-500 group-hover:scale-110" src={product.img}></img>
+
+      <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <p className="h1_primary text-white">{product.category}</p>
+        <PrimaryButton
+          className={"duration-150 border-white bg-white hover:bg-black hover:text-white"}
+          content="Shop Now"
+        ></PrimaryButton>
       </div>
     </div>
   );

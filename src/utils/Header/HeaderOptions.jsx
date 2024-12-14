@@ -3,9 +3,6 @@ import heartIcon from "../../assets/heartIcon.svg";
 import storeIcon from "../../assets/shopIcon.svg";
 import profileIcon from "../../assets/profileIcon.svg";
 
-
-
-
 export const headerOptions = ["Home", "Shops", "Products", "Pages", "FoxKit"];
 export const headerRight = [
   {
@@ -19,5 +16,17 @@ export const headerRight = [
   },
   {
     img: storeIcon,
+  },
+];
+
+export const clothTypes = [
+  {
+    name: "Crew neck",
+  },
+  {
+    name: "Hoodies",
+  },
+  {
+    name: "Sweat shirt",
   },
 ];
