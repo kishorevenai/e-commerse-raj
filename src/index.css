@@ -12,16 +12,20 @@
 
 /* -------------------Typography------------------------ */
 
-.p_primary {
+.p_1 {
   @apply text-[16px] font-[500];
 }
 
-.p_secondary {
+.p_2 {
   @apply text-[14px];
 }
 
-.p_tertiary {
+.p_3 {
   @apply text-[12px];
+}
+
+.p_4 {
+  @apply text-[10px];
 }
 
 .h1_primary {

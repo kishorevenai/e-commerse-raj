@@ -30,7 +30,7 @@ const Header = () => {
 
   const headerLeft = headerOptions.map((options) => {
     return (
-      <p className="cursor-pointer p_primary" key={options}>
+      <p className="cursor-pointer p_1" key={options}>
         {options}
       </p>
     );

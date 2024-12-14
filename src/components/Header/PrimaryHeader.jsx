@@ -15,7 +15,7 @@ const PrimaryHeader = () => {
 
   const headerOptions = clothTypes.map((options) => {
     return (
-      <button className="p_secondary font-normal" key={options}>
+      <button className="p_2 font-normal" key={options}>
         {options.name}
       </button>
     );
@@ -54,7 +54,7 @@ const PrimaryHeader = () => {
               <img className="w-full" alt="Profile" src={profileIcon}></img>
             </div>
             <div>
-              <p className="p_tertiary">Sign In</p>
+              <p className="p_3">Sign In</p>
               <p>My Account</p>
             </div>
           </div>

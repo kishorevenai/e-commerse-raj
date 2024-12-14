@@ -5,16 +5,16 @@ const Banner = () => {
     <div className="w-full">
       <div className="make_between w-7/12 h-[80px] mx-auto">
         <div className="make_row_between">
-          <p className="p_secondary">Shop now, play later!</p>
-          <p className="p_tertiary font-normal">With Your Flexway account</p>
+          <p className="p_2">Shop now, play later!</p>
+          <p className="p_3 font-normal">With Your Flexway account</p>
         </div>
         <div className="make_row_between">
-          <p className="p_secondary">Next Day Delivery</p>
-          <p className="p_tertiary font-normal">Order by 11:00pm</p>
+          <p className="p_2">Next Day Delivery</p>
+          <p className="p_3 font-normal">Order by 11:00pm</p>
         </div>
         <div className="make_row_between">
-          <p className="p_secondary">Click & Collect</p>
-          <p className="p_tertiary font-normal">From 7000+ Evri Parcel Shop</p>
+          <p className="p_2">Click & Collect</p>
+          <p className="p_3 font-normal">From 7000+ Evri Parcel Shop</p>
         </div>
       </div>
 

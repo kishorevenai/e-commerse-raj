@@ -10,8 +10,8 @@ const CardOne = ({ className: CardClassName }) => {
       </div>
       <div className="flex w-11/12 mx-auto make_between">
         <div className="make_row_between_start">
-          <p className="p_primary">Product Name</p>
-          <p className="p_secondary ">10 Items</p>
+          <p className="p_1">Product Name</p>
+          <p className="p_2 ">10 Items</p>
         </div>
         <button className="make_center duration-150 bg-white rounded-full h-[40px] aspect-square hover:scale-125">
           <img alt="arrow" src={LongArrowIcon}></img>
