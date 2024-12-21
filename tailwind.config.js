@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        CardGrid: "repeat(auto-fill,minmax(350px, 1fr))",
+        OneCardGrid: "repeat(auto-fill,minmax(400px, 1fr))",
+        CircleCardGrid: "repeat(auto-fill,minmax(230px, 1fr))",
+      },
       colors: {
         primary_color: "#ebebea",
         sclr: "#ff9e00",

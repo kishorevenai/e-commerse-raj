@@ -34,13 +34,23 @@ const ContentOne = () => {
       color_varient: ["red", "blue", "black"],
     },
   ].map((products) => {
-    return <CardOne key={products.category} product={products} />;
+    return (
+      <CardOne
+        isSelectOptionButton={true}
+        isFavourite={false}
+        key={products.category}
+        className={"w-[90%]"}
+        product={products}
+      />
+    );
   });
 
   return (
     <div className="w-full mt-5">
       <p className="h1_secondary mb-5 text-center">HOT THIS WEEK</p>
-      <div className="w-full make_between">{products}</div>
+      <div className="grid grid-cols-OneCardGrid gap-5 place-content-center place-items-center">
+        {products}
+      </div>
     </div>
   );
 };

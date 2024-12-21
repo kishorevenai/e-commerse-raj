@@ -1,9 +1,23 @@
 import starIcon from "../../../assets/starIcon.svg";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Icons from "../Icons/Icons";
-const CardOne = ({ product }) => {
+import favouriteIcon from "../../../assets/starIcon.svg";
+const CardOne = ({
+  product,
+  className,
+  isFavourite = false,
+  isSelectOptionButton = false,
+}) => {
   return (
-    <div className="w-4/12 group aspect-3/4">
+    <div className={`${className} group relative aspect-3/4`}>
+      {isFavourite && (
+        <button>
+          <Icons
+            src={favouriteIcon}
+            className={"img_icon_size absolute z-10 top-[5%] right-[5%]"}
+          />
+        </button>
+      )}
       <div className="w-full h-[90%] overflow-hidden">
         <img
           className="w-full duration-500 group-hover:scale-110"
@@ -25,19 +39,22 @@ const CardOne = ({ product }) => {
         <p className="p_2">
           {product.currency}. {product.price}.00
         </p>
-        <div className="w-5/12 mx-auto h-[60px] make_between">
-          <div className="w-[35px] h-[35px] bg-black border-grey border rounded-full"></div>
-          <div className="w-[35px] h-[35px] bg-[#f86b4c] border-grey border rounded-full"></div>
-          <div className="w-[35px] h-[35px] bg-[#f8c44c] border-grey border rounded-full"></div>
-          <div className="w-[35px] h-[35px] bg-white border-grey border rounded-full"></div>
-          <div className="w-[35px] h-[35px] bg-black border-grey border rounded-full"></div>
+        <div className="w-7/12 mx-auto h-[60px] make_between">
+          <div className="w-2/12 aspect-square bg-black border-grey border rounded-full"></div>
+          <div className="w-2/12 aspect-square bg-[#f86b4c] border-grey border rounded-full"></div>
+          <div className="w-2/12 aspect-square bg-[#f8c44c] border-grey border rounded-full"></div>
+          <div className="w-2/12 aspect-square bg-white border-grey border rounded-full"></div>
+          <div className="w-2/12 aspect-square bg-black border-grey border rounded-full"></div>
         </div>
-        <PrimaryButton
-          content={"SELECT OPTIONS"}
-          className={
-            "duration-150 w-[90%] border border-black bg-white hover:bg-sclr hover:border-white"
-          }
-        />
+
+        {isSelectOptionButton && (
+          <PrimaryButton
+            content={"SELECT OPTIONS"}
+            className={
+              "duration-150 w-[90%] border border-black bg-white hover:bg-sclr hover:border-white"
+            }
+          />
+        )}
       </div>
     </div>
   );

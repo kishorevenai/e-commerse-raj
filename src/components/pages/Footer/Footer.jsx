@@ -33,7 +33,7 @@ const footerInformation = [
 ];
 const Footer = () => {
   return (
-    <div className="w-9/12 mx-auto mt-10">
+    <div className="w-9/12 mx-auto mt-10 lg:w-9/12 sm:w-full">
       {/* <div className="make_center">
         <hr className="border-1 flex-1 border-black" />
         <p className="p_1 mx-5">Find Out More</p>
@@ -59,8 +59,8 @@ const Footer = () => {
 
       {/* ---------------------------- */}
 
-      <div className="w-full border-t border-black border-b border-black">
-        <div className="make_between h-[80px] w-8/12 mx-auto">
+      <div className="w-full border-t border-b border-black">
+        <div className="make_between h-[80px] w-8/12 mx-auto md:w-10/12 sm:w-full">
           <div className="make_between">
             <div className="img_icon_size mr-3">
               <img src={questionIcon} className="w-full"></img>
@@ -98,7 +98,7 @@ const Footer = () => {
           <div className="make_row_between_start w-5/12">
             <p className="mb-5">Sing up to emails</p>
             <div className="make_between overflow-hidden border rounded-[5px] h-[50px]">
-              <input className="h-full w-8/12"></input>
+              <input className="h-full pl-3 w-8/12"></input>
               <button className="h-full bg-black text-white w-4/12 flex-1">
                 Sign Up
               </button>
