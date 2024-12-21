@@ -4,7 +4,7 @@ import ContentTwo from "./ContentTwo";
 import ContentThree from "./ContentThree";
 const Home = () => {
   return (
-    <div className="w-9/12 m-auto">
+    <div className="w-full max-w-[1500px] m-auto">
       <Banner />
       <ContentOne />
       <ContentThree />

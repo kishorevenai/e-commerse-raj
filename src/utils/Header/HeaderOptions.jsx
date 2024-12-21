@@ -21,12 +21,21 @@ export const headerRight = [
 
 export const clothTypes = [
   {
-    name: "Crew neck",
+    name: "Round Next T-Shirt",
+  },
+  {
+    name: "Round Neck-Oversized",
   },
   {
     name: "Hoodies",
   },
   {
-    name: "Sweat shirt",
+    name: "Polo T Shirt",
+  },
+  {
+    name: "Metal Batches",
+  },
+  {
+    name: "Printed Cups",
   },
 ];

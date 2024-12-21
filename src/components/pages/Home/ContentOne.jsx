@@ -8,22 +8,40 @@ const ContentOne = () => {
   const products = [
     {
       img: ProductOne,
-      category: "HOODIE",
+      category: "HOODIE - Wannabe Premium Tee",
+      review: 2,
+      star: 5,
+      price: 499,
+      currency: "Rs",
+      color_varient: ["violet", "blue", "black"],
     },
     {
       img: ProductThree,
       category: "COAT",
+      review: 2,
+      star: 5,
+      price: 499,
+      currency: "Rs",
+      color_varient: ["red", "blue", "black"],
     },
     {
       img: ProductFour,
       category: "TOPS",
+      review: 2,
+      star: 5,
+      price: 499,
+      currency: "Rs",
+      color_varient: ["red", "blue", "black"],
     },
   ].map((products) => {
-    return <CardOne product={products} />;
+    return <CardOne key={products.category} product={products} />;
   });
 
   return (
-    <div className="w-full mt-5 make_between border-black">{products}</div>
+    <div className="w-full mt-5">
+      <p className="h1_secondary mb-5 text-center">HOT THIS WEEK</p>
+      <div className="w-full make_between">{products}</div>
+    </div>
   );
 };
 

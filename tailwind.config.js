@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         primary_color: "#ebebea",
-        sclr: "#336798",
+        sclr: "#ff9e00",
       },
       aspectRatio: {
         "3/4": "3 / 4",
