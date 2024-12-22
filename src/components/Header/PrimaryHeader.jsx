@@ -51,7 +51,7 @@ const PrimaryHeader = () => {
           toggleSearch ? "h-[150px] opacity-100" : "h-[0px] opacity-0"
         }`}
       >
-        <div className="img_logo_size -rotate-90">
+        <div className="w-[100px] -rotate-90">
           <img alt="Logo" src={Logo}></img>
         </div>
 
