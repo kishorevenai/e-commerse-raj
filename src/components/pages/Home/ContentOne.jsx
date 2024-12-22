@@ -1,8 +1,8 @@
 import CardOne from "../../component/ProductCards/CardOne";
 import ProductOne from "../../../assets/shirtOne.jpg";
-import ProductTwo from "../../../assets/shirtTwo.jpg";
 import ProductThree from "../../../assets/shirtThree.jpg";
 import ProductFour from "../../../assets/shirtFour.jpg";
+
 
 const ContentOne = () => {
   const products = [
@@ -35,13 +35,14 @@ const ContentOne = () => {
     },
   ].map((products) => {
     return (
-      <CardOne
-        isSelectOptionButton={true}
-        isFavourite={false}
-        key={products.category}
-        className={"w-[90%]"}
-        product={products}
-      />
+        <CardOne
+          isSelectOptionButton={true}
+          isFavourite={false}
+          key={products.category}
+          className={"w-[90%]"}
+          product={products}
+        />
+        
     );
   });
 

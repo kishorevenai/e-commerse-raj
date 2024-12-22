@@ -6,6 +6,7 @@ import cartIcon from "../../assets/shopIcon.svg";
 import { clothTypes } from "../../utils/Header/HeaderOptions";
 import { useRef, useState, useEffect } from "react";
 import Icons from "../component/Icons/Icons";
+import { Link } from "react-router-dom";
 
 const PrimaryHeader = () => {
   const searchRef = useRef(null);
@@ -13,10 +14,12 @@ const PrimaryHeader = () => {
 
   const headerOptions = clothTypes.map((options) => {
     return (
-      <button className="font-normal group" key={options}>
-        <p className="p_2">{options.name}</p>
-        <div className="w-[0px] duration-150 group-hover:w-full h-[1px] bg-black"></div>
-      </button>
+      <Link key={options} to={"/"}>
+        <button className="font-normal group" key={options}>
+          <p className="p_2">{options.name}</p>
+          <div className="w-[0px] duration-150 group-hover:w-full h-[1px] bg-black"></div>
+        </button>
+      </Link>
     );
   });
 
