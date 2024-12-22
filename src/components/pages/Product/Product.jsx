@@ -44,22 +44,22 @@ const Product = () => {
   });
   return (
     <div className="border-2 border-black w-full h-fit make_row_between">
-      <div className="w-8/12 make_between mt-20 mx-auto border border-black h-[600px]">
+      <div className="w-8/12 make_between mt-20 mx-auto h-[600px]">
         {/* ----------image varients---------------- */}
 
-        <div className="border-2 w-1/12 h-full make_row_between border-black">
+        <div className="w-1/12 h-full make_row_between">
           <ProductImageVarients totalTypes={dummyData.imageTypes} />
         </div>
 
         {/* ----------image---------------- */}
 
-        <div className="w-4/12 aspect-3/4 make_center bg-gray-100 border border-black">
+        <div className="w-4/12 aspect-3/4 make_center bg-gray-100">
           <img className="w-full bg-cover" src={primaryShirt}></img>
         </div>
 
         {/* ----------content---------------- */}
-        <div className="w-6/12 make_row_between_start border-2 h-full">
-          <div className="make_between w-full border border-black">
+        <div className="w-6/12 make_row_between_start h-full">
+          <div className="make_between w-full">
             <p className="h1_tertiary font-normal">{dummyData.productName}</p>
             <button className="w-[40px] aspect-square make_center border-2 border rounded-full">
               <Icons src={favouriteIcon} className={"w-[20px]"} />
@@ -68,7 +68,7 @@ const Product = () => {
 
           {/* ---------price--------------- */}
 
-          <div className="make_row_between_start border-2 ">
+          <div className="make_row_between_start">
             <p className="p_0">Rs. {dummyData.price}.00</p>
             <p className="p_3 font-normal">Tax included</p>
           </div>
@@ -88,7 +88,7 @@ const Product = () => {
 
           {/* ---------sizes--------------- */}
 
-          <div className="w-full border border-black">
+          <div className="w-full">
             <div className="make_between mb-5">
               <p className="p_2 font-normal">Choose the size 4XL</p>
               <button className="make_between w-[130px]">

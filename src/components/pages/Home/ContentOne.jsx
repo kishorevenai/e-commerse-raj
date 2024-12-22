@@ -3,7 +3,6 @@ import ProductOne from "../../../assets/shirtOne.jpg";
 import ProductThree from "../../../assets/shirtThree.jpg";
 import ProductFour from "../../../assets/shirtFour.jpg";
 
-
 const ContentOne = () => {
   const products = [
     {
@@ -35,20 +34,21 @@ const ContentOne = () => {
     },
   ].map((products) => {
     return (
-        <CardOne
-          isSelectOptionButton={true}
-          isFavourite={false}
-          key={products.category}
-          className={"w-[90%]"}
-          product={products}
-        />
-        
+      <CardOne
+        isSelectOptionButton={true}
+        isFavourite={false}
+        key={products.category}
+        className={"w-[90%]"}
+        product={products}
+        isDiscount={false}
+      />
     );
   });
 
   return (
     <div className="w-full mt-5">
       <p className="h1_secondary mb-5 text-center">HOT THIS WEEK</p>
+
       <div className="grid grid-cols-OneCardGrid gap-5 place-content-center place-items-center">
         {products}
       </div>

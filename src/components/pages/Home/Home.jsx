@@ -3,6 +3,7 @@ import ContentOne from "./ContentOne";
 import ContentTwo from "./ContentTwo";
 import ContentThree from "./ContentThree";
 import ContentFour from "./ContentFour";
+import TimerBanner from "./TimerBanner";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Banner />
       <ContentOne />
       <ContentThree />
+      <TimerBanner />
       <ContentTwo />
       <ContentFour />
     </div>

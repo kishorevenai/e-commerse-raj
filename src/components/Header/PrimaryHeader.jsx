@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logoIcon.png";
 import searchIcon from "../../assets/searchIcon.svg";
 import profileIcon from "../../assets/profileIcon.svg";
 import favouriteIcon from "../../assets/heartIcon.svg";
@@ -47,11 +47,11 @@ const PrimaryHeader = () => {
     <div className="w-full border-b border-2">
       <div
         ref={searchRef}
-        className={`w-10/12 mx-auto make_between absolute top-0 left-[50%] -translate-x-1/2 bg-white duration-150 overflow-hidden ${
+        className={`w-10/12 mx-auto make_between absolute z-10 top-0 left-[50%] -translate-x-1/2 bg-white duration-150 overflow-hidden ${
           toggleSearch ? "h-[150px] opacity-100" : "h-[0px] opacity-0"
         }`}
       >
-        <div className="img_logo_size">
+        <div className="img_logo_size -rotate-90">
           <img alt="Logo" src={Logo}></img>
         </div>
 
@@ -89,7 +89,7 @@ const PrimaryHeader = () => {
           </button>
 
           {/* ------------------logo--------------- */}
-          <div className="img_logo_size">
+          <div className="w-[50px] -rotate-90">
             <img alt="Logo" src={Logo}></img>
           </div>
 

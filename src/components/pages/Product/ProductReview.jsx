@@ -5,11 +5,11 @@ const ProductReview = () => {
   return (
     <div className="border-2 w-8/12 h-fit mt-20 mb-20">
       <div className="mb-2">
-        <p className="h1_secondary font-normal w-11/12 mx-auto border border-black">
+        <p className="h1_secondary font-normal w-11/12 mx-auto">
           Customer Reviews
         </p>
-        <div className="w-11/12 border mt-5 mx-auto make_between">
-          <div className="border flex justify-start items-start">
+        <div className="w-11/12 mt-5 mx-auto make_between">
+          <div className="flex justify-start items-start">
             <div className="w-[200px] border-black">
               <div className="make_between w-[150px]">
                 <Icons src={favouriteIcon} className={"img_icon_size"} />
@@ -39,7 +39,7 @@ const ProductReview = () => {
 
 export const EachReview = () => {
   return (
-    <div className="border-t pt-2 w-11/12 mx-auto">
+    <div className="border-t pt-2 w-11/12 mx-auto mb-2">
       <div className="make_start gap-5">
         <div className="w-[50px] h-[50px] rounded-full bg-gray-400 overflow-hidden">
           <img className="w-full"></img>

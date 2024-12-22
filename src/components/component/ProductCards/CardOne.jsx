@@ -8,6 +8,7 @@ const CardOne = ({
   className,
   isFavourite = false,
   isSelectOptionButton = false,
+  isDiscount = true,
 }) => {
   return (
     <Link to={"/products"}>
@@ -20,6 +21,13 @@ const CardOne = ({
             />
           </button>
         )}
+
+        {isDiscount && (
+          <div className="w-[50px] make_center absolute z-10 h-[50px] rounded-full top-[5%] left-[5%] bg-slate-200">
+            <p className="p_1">50%</p>
+          </div>
+        )}
+
         <div className="w-full h-[90%] overflow-hidden">
           <img
             className="w-full duration-500 group-hover:scale-110"
