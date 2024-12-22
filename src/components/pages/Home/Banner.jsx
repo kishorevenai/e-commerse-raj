@@ -26,7 +26,7 @@ const Banner = () => {
     banner = BannerPicTwo;
   }
   return (
-    <div className="w-full h-fit relative border-2">
+    <div className="w-full h-fit relative">
       <div className="make_between w-[100px] absolute top-[90%] left-1/2 -translate-x-1/2">
         <div
           className={`border duration-150 ${
