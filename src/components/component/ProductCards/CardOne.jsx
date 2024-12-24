@@ -26,8 +26,8 @@ const CardOne = ({
 
         <div className="w-[90%] h-[60%] mx-auto relative border-2 rounded-[10px] overflow-hidden m-1">
           {isDiscount && (
-            <div className="w-[60%] make_center absolute rounded-tr-[5px] rounded-br-[5px] shadow-md top-[80%] z-20 bg-[#f8e8d7]">
-              <p className="p_1 font-normal">Flat 10% OFF</p>
+            <div className="w-[60%] make_center absolute rounded-tr-[5px] rounded-br-[5px] shadow-md top-[80%] z-20 bg-gradient-to-r from-[rgba(248,232,215,1)] to-[rgba(224,195,166,0.9)]">
+              <p className="p_1 font-normal text-black">Flat 10% OFF</p>
             </div>
           )}
           <img
