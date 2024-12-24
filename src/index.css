@@ -44,12 +44,12 @@
   @apply text-[30px];
 }
 
-.border_curve {
+.b_crv {
   @apply rounded-[5px];
 }
 
 .border_primary {
-  @apply border border-black border_curve;
+  @apply border border-black b_crv;
 }
 
 .button_primary {

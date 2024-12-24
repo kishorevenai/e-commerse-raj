@@ -12,7 +12,9 @@ const CardOne = ({
 }) => {
   return (
     <Link to={"/products"}>
-      <div className={`${className} group relative aspect-3/4`}>
+      <div
+        className={`${className} duration-150 group make_row_between border hover:shadow-lg border-grey rounded-[10px] aspect-3/4`}
+      >
         {isFavourite && (
           <button>
             <Icons
@@ -22,19 +24,18 @@ const CardOne = ({
           </button>
         )}
 
-        {isDiscount && (
-          <div className="w-[50px] make_center absolute z-10 h-[50px] rounded-full top-[5%] left-[5%] bg-slate-200">
-            <p className="p_1">50%</p>
-          </div>
-        )}
-
-        <div className="w-full h-[90%] overflow-hidden">
+        <div className="w-[90%] h-[60%] mx-auto relative border-2 rounded-[10px] overflow-hidden m-1">
+          {isDiscount && (
+            <div className="w-[60%] make_center absolute rounded-tr-[5px] rounded-br-[5px] shadow-md top-[80%] z-20 bg-[#f8e8d7]">
+              <p className="p_1 font-normal">Flat 10% OFF</p>
+            </div>
+          )}
           <img
             className="w-full duration-500 group-hover:scale-110"
             src={product.img}
           ></img>
         </div>
-        <div className="make_row_evenly h-[200px]">
+        <div className="make_row_evenly w-full h-[200px]">
           <p className="p_3">{product.category}</p>
           <div className="make_center gap-3">
             <div className="make_between">
