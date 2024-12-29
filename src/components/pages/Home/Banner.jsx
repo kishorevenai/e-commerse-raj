@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import BannerPic from "../../../assets/productOne.webp";
-import BannerPicOne from "../../../assets/productTwo.webp";
-import BannerPicTwo from "../../../assets/productThree.webp";
+import BannerPic from "../../../assets/banner-1.jpg";
+import BannerPicOne from "../../../assets/banner-2.jpg";
+import BannerPicTwo from "../../../assets/banner-3.jpg";
 
 const Banner = () => {
   const [switchBanner, setSwitchBanner] = useState(0);
@@ -51,7 +51,7 @@ const Banner = () => {
         ></div>
       </div>
       <div className="w-full overflow-hidden">
-        <img className={`border-2 duration-500`} src={banner}></img>
+        <img className={`border-2 duration-500 w-full`} src={banner}></img>
       </div>
     </div>
   );

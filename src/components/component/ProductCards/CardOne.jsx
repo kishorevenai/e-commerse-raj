@@ -13,7 +13,7 @@ const CardOne = ({
   return (
     <Link to={"/products"}>
       <div
-        className={`${className} duration-150 group make_row_between border hover:shadow-lg border-grey rounded-[10px] aspect-3/4`}
+        className={`${className} duration-150 group make_row_between border hover:shadow-lg border-grey rounded-[10px] aspect-3/4 p-1`}
       >
         {isFavourite && (
           <button>
@@ -24,7 +24,7 @@ const CardOne = ({
           </button>
         )}
 
-        <div className="w-[90%] h-[60%] mx-auto relative border-2 rounded-[10px] overflow-hidden m-1">
+        <div className="w-full h-[60%] mx-auto relative border-2 rounded-[10px] overflow-hidden">
           {isDiscount && (
             <div className="w-[60%] make_center absolute rounded-tr-[5px] rounded-br-[5px] shadow-md top-[80%] z-20 bg-gradient-to-r from-[rgba(248,232,215,1)] to-[rgba(224,195,166,0.9)]">
               <p className="p_1 font-normal text-black">Flat 10% OFF</p>
