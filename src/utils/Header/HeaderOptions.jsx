@@ -22,20 +22,26 @@ export const headerRight = [
 export const clothTypes = [
   {
     name: "Home",
+    link: "/",
   },
   {
     name: "Shop",
+    link: "/",
   },
   {
     name: "About Us",
+    link: "/About Us",
   },
   {
     name: "Track Order",
+    link: "/",
   },
   {
     name: "Bulk Enquiry",
+    link: "/",
   },
   {
     name: "Contact",
+    link: "/Contact",
   },
 ];

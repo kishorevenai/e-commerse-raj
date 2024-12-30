@@ -14,7 +14,7 @@ const PrimaryHeader = () => {
 
   const headerOptions = clothTypes.map((options) => {
     return (
-      <Link key={options} to={"/"}>
+      <Link key={options} to={options.link}>
         <button className="font-normal group" key={options}>
           <p className="p_2">{options.name}</p>
           <div className="w-[0px] duration-150 group-hover:w-full h-[1px] bg-black"></div>

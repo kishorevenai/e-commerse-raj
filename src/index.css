@@ -68,6 +68,10 @@
   @apply flex justify-between items-center;
 }
 
+.make_between_start {
+  @apply flex justify-between items-start;
+}
+
 .make_start {
   @apply flex justify-start items-center;
 }
