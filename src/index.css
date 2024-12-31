@@ -84,7 +84,7 @@
 }
 
 .make_row_between {
-  @apply flex flex-col justify-evenly items-center;
+  @apply flex flex-col justify-between items-center;
 }
 
 .make_row_around {

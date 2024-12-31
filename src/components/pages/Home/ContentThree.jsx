@@ -7,7 +7,7 @@ import CircleCard from "../../component/CircleCard.jsx/CircleCard";
 const ContentThree = () => {
   return (
     <div className="h-[] mt-5 make_row_evenly">
-      <p className="h1_secondary text-center mb-5">SHOP BY COLLECTIONS</p>
+      <p className="h1_secondary text-center mb-20">SHOP BY COLLECTIONS</p>
       <div className="w-full grid grid-cols-CircleCardGrid gap-1 place-content-center place-items-center">
         <CircleCard src={personOne} name={"T-Shirt"} />
         <CircleCard src={personTwo} name={"Round Neck-Oversized"} />

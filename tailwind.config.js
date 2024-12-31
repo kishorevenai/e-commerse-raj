@@ -13,7 +13,7 @@ export default {
         sclr: "#ff9e00",
       },
       aspectRatio: {
-        "3/4": "3 / 4",
+        "3/4": "3 / 5",
       },
     },
   },

@@ -38,7 +38,7 @@ const ContentOne = () => {
         isSelectOptionButton={true}
         isFavourite={false}
         key={products.category}
-        className={"w-[90%]"}
+        className={"w-[95%]"}
         product={products}
         isDiscount={false}
       />
@@ -48,7 +48,6 @@ const ContentOne = () => {
   return (
     <div className="w-full mt-5">
       <p className="h1_secondary mb-5 text-center">HOT THIS WEEK</p>
-
       <div className="grid grid-cols-OneCardGrid gap-5 place-content-center place-items-center">
         {products}
       </div>

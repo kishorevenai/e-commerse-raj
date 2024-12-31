@@ -14,7 +14,7 @@ const ContentTwo = () => {
   });
   return (
     <div className="w-full mt-5">
-      <p className="h1_secondary text-center">Our Unisex Collections</p>
+      <p className="h1_secondary text-center mb-20">Our Unisex Collections</p>
       <div className="grid grid-cols-CardGrid place-content-center gap-3 place-items-center">
         {cards}
       </div>
