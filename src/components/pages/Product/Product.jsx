@@ -53,7 +53,7 @@ const Product = () => {
 
         {/* ----------image---------------- */}
 
-        <div className="w-4/12 aspect-3/4 make_center bg-gray-100">
+        <div className="w-4/12 aspect-C3/4 make_center bg-gray-100">
           <img className="w-full bg-cover" src={primaryShirt}></img>
         </div>
 
