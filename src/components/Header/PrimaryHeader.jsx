@@ -96,7 +96,7 @@ const PrimaryHeader = () => {
           {/* ------------------Shop favourite icon---------------------- */}
 
           <div className="flex w-[100px] make_between">
-            <Link to={"/Account"}>
+            <Link to={"/Account Login"}>
               <div className="img_icon_size">
                 <img className="w-full" alt="profile" src={profileIcon}></img>
               </div>
